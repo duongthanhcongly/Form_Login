@@ -1,0 +1,48 @@
+:root{
+    --primary-color:#ee4d3e;
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color: #dbdbdb;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* common button */
+.btn{
+    outline: none;
+    border:none ;
+    height: 40px;
+    min-width: 100px;
+        text-decoration: none;
+        color: var(--white-color);
+        font-size: 1.4rem;
+        padding:0;
+        border-radius: 2px;
+}
+.btn.btn-normal{
+   
+    width: 112px;
+    padding: 0 11px 0 2px;
+    margin-right: 5px;
+    background-color: #1877f2   ;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    
+     
+}
+.btn.btn-size--big{
+    width: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.7;
+    cursor: default;
+    text-transform: uppercase;
+    
+}

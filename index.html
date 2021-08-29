@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.min.css">
+    <link
+      rel="stylesheet"
+      href="./fonts/fontawesome-free-5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="auth-form">
+        <div  id="divdangky" class="auth-form__container "  >
+           <div class="auth-form__header">
+             <h3  class="auth-form__heading" >
+                 Đăng ký
+             </h3>
+            </div>
+  
+            <!-- end text-header -->
+               <div  class="auth-form__form">
+                   <div class="auth-form__input-group">
+                    <input type="text" placeholder="Số điện thoại" class="auth-form__input">
+             
+                   </div>
+                   <div class="auth-form__controls">
+                    <button class="auth-form__btn btn btn-size--big">TIẾP THEO</button>
+                   </div>
+                   <!-- end form control -->
+                   <div class="auth-form__social">
+                       <div class="auth-form__social-heading">
+                           <span class="auth-form__social_text">Hoặc</span>
+                       </div>
+                       <div  class="auth-form__social-content">
+                           <a href="" class="auth-form__social-facebook btn btn-normal ">
+                            <i class="auth-form__social-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__social-title">
+                                 Facebok</span>
+
+                           </a>
+                           <a href="" class="auth-form__social--google btn btn-normal ">
+                             <i class="auth-form__social-icon fab fa-google "></i>
+                             <span class="auth-form__social-title"> Google</span>
+                        </a>
+                           <a href="" class="auth-form__social--apple btn  btn-normal">
+                           <i class="auth-form__social-icon fab fa-apple"></i>
+                             <span class="auth-form__social-title"> Apple</span>
+                        </a>
+
+                       </div>
+                   </div>
+                   <!-- end form-social__icon -->
+                    <div class="auth-form__policy">
+                        <span class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Shopee về <a href="" class="auth-form__policy-text-link">Điều khoản dịch vụ</a> & 
+                            <a href="" class="auth-form__policy-text-link" >Chính sách bảo mật  </a>
+                        </span>
+                    </div>
+                    <!-- end policy -->
+               </div>
+               <!-- end form__form -->
+               <div class="auth-form__footer">
+                   <span class="auth-form__footer-text">
+                       Bạn đã có tài khoản?
+                   </span>
+                   <a href="#"onclick="onDangNhap()" class="auth-form__footer-link">
+                       Đăng nhập
+                   </a>
+               </div>
+               
+        </div>
+        <!-- end signin -->
+
+        <div  id="divdangnhap" class="auth-form__container hidden"  >
+            <div class="auth-form__header">
+                <h3 class="auth-form__heading" >
+                    Đăng Nhập
+                </h3>
+               </div>
+     
+               <!-- end text-header -->
+                  <div class="auth-form__form" id="divdangnhap" >
+                      <div class="auth-form__input-group">
+                       <input type="text" placeholder="Số điện thoại/Tên đăng nhập" class="auth-form__input">
+                
+                      </div>
+                      <div class="auth-form__input-group geye">
+                          <input id="pass" type="password" placeholder="" class="auth-form__input">
+                          <i class="fas fa-bullseye eye" onclick="showPass()"></i>
+                   
+                         </div>
+                      <div class="auth-form__controls">
+                       <button class="auth-form__btn btn btn-size--big">đăng nhập</button>
+                      </div>
+                      <div class="auth-form__help">
+                          <span class="auth-form__help-text">
+                              Quên mật khẩu
+                          </span>
+                          <span class="auth-form__help-text">
+                              Đăng nhập với SMS
+                          </span>
+                      </div>
+                      <!-- end form control -->
+                      <div class="auth-form__social">
+                          <div class="auth-form__social-heading">
+                              <span class="auth-form__social_text">Hoặc</span>
+                          </div>
+                          <div  class="auth-form__social-content">
+                              <a href="" class="auth-form__social-facebook btn btn-normal ">
+                               <i class="auth-form__social-icon fab fa-facebook-square"></i>
+                               <span class="auth-form__social-title">
+                                    Facebok</span>
+   
+                              </a>
+                              <a href="" class="auth-form__social--google btn btn-normal ">
+                                <i class="auth-form__social-icon fab fa-google "></i>
+                                <span class="auth-form__social-title"> Google</span>
+                           </a>
+                              <a href="" class="auth-form__social--apple btn  btn-normal">
+                              <i class="auth-form__social-icon fab fa-apple"></i>
+                                <span class="auth-form__social-title"> Apple</span>
+                           </a>
+   
+                          </div>
+                      </div>
+                      <!-- end form-social__icon -->
+                       <div class="auth-form__policy">
+                           <span class="auth-form__policy-text">
+                               Bằng việc đăng kí, bạn đã đồng ý với Shopee về <a href="" class="auth-form__policy-text-link">Điều khoản dịch vụ</a> & 
+                               <a href="" class="auth-form__policy-text-link" >Chính sách bảo mật  </a>
+                           </span>
+                       </div>
+                       <!-- end policy -->
+                  </div>
+                  <!-- end form__form -->
+                  <div class="auth-form__footer">
+                      <span class="auth-form__footer-text">
+                          Bạn mới biết đến shopee?
+                      </span>
+                      <a href="#" onclick="onDangky()"  class="auth-form__footer-link">
+                          Đăng ký
+                      </a>
+                  </div>
+                  
+           
+         
+         </div>
+           <!-- end login -->
+                </div>
+
+      
+    <!-- end auth-form -->
+</body>
+</html>
